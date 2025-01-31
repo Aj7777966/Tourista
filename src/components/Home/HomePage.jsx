@@ -1,21 +1,9 @@
 import "../Home/Home.css"
-import data from "../../Data"
 import { useEffect } from "react";
 import Navbar from "../../Include/Navbar"
 import { homePageSlider, initializeSlider } from "./Home"
 
 const Page = () => {
-
-  const [topDestinations, setTopDestinations] = useState([]);
-  const topdestinations = [
-    "Mumbai", "Delhi", "Ahmedabad", "Mount Abu", "Udaipur", "Kashmir",
-    "Manali", "Lonavala", "Banglore", "Goa", "Kerala", "Andaman",
-    "Ayodhya", "Jaipur", "Kolkata", "Varanasi"
-  ];
-  useEffect(() => {
-    const topdestresult = data.filter(city => topdestinations.includes(city.city.cityname));
-    setTopDestinations(topdestresult);
-  }, []);
   
   useEffect(() => {
     homePageSlider(); // Run the GSAP slider effect
