@@ -1,0 +1,136 @@
+/* About us Text slider css starts here */
+
+.text-overlay-about {
+    text-align: center;
+    text-align: justify;
+    font-family: "Comforter", cursive;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 60px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media screen and (max-width: 768px) {
+    .text-overlay-about {
+        font-size: 30px;
+        /* Reduce font size for smaller screens */
+        letter-spacing: 0.5em;
+        /* Adjust spacing for readability */
+        top: 15%;
+        /* Adjust position */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-overlay-about {
+        font-size: 20px;
+        /* Further reduce font size for mobile screens */
+        letter-spacing: 0.3em;
+        /* Adjust spacing */
+        top: 10%;
+        /* Adjust position */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutquote {
+        font-size: 30px;
+        /* Reduce font size for smaller screens */
+        letter-spacing: 0.5em;
+        /* Adjust spacing for readability */
+        top: 45%;
+        /* Adjust position */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutquote {
+        font-size: 12px;
+        /* Further reduce font size for mobile screens */
+        text-align: center;
+        top: 22%;
+        /* Adjust position */
+    }
+}
+
+/* developers team section starts here */
+.box1 {
+	border-radius: 150px;
+	background:#fff;
+	position:relative;
+	overflow: hidden;
+	text-align:center;
+}
+.box1:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    border-radius: 150px;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.30);
+    transition: all 0.3s ease;
+    background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
+}
+.box1:hover:before {
+    width: 100%;
+}
+.box1:hover .image-wrapper {
+	padding:0;
+}
+.box1:hover .box-desc {
+	color:#fff;
+}
+.box1:hover .social li a {
+	background:#fff;
+	background-image: none;
+	color:#000;
+}
+.box1:hover .social li a:hover {
+	background:#1d1d1d;
+	color:#fff;
+}
+.image-wrapper {
+    position: relative;
+	max-width: 210px;
+    max-height: 210px;
+	margin:0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.5s ease;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.20);
+}
+.image-wrapper img {
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.box1-desc {
+	position:relative;
+}
+ul.social {
+	padding:0;
+}
+ul.social li {
+	display:inline-block;
+	list-style-type:none;
+}
+ul.social li a {
+	position:relative;
+	width: 36px;
+    height: 36px;
+	background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
+	display:inline-block;
+	line-height:36px;
+	border-radius:50%;
+	color:#fff;
+	transition: all .5s ease;
+}
+/* developers team section ends here */
+
+/* about us text slider ends here */

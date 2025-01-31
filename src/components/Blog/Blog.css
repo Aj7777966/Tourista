@@ -1,0 +1,71 @@
+/* blog page design starts here */
+.text-overlay-blog {
+    text-align: center;
+    text-align: justify;
+    font-family: "Comforter", cursive;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 60px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.blogqoute {
+    text-align: center;
+    text-align: justify;
+    font-family: "Comforter", cursive;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 40px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 768px) {
+    .text-overlay-blog {
+        font-size: 30px;
+        /* Reduce font size for smaller screens */
+        letter-spacing: 0.5em;
+        /* Adjust spacing for readability */
+        top: 15%;
+        /* Adjust position */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-overlay-blog {
+        font-size: 20px;
+        /* Further reduce font size for mobile screens */
+        letter-spacing: 0.3em;
+        /* Adjust spacing */
+        top: 10%;
+        /* Adjust position */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blogqoute {
+        font-size: 30px;
+        /* Reduce font size for smaller screens */
+        letter-spacing: 0.5em;
+        /* Adjust spacing for readability */
+        top: 45%;
+        /* Adjust position */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blogqoute {
+        font-size: 12px;
+        /* Further reduce font size for mobile screens */
+        text-align: center;
+        top: 22%;
+        /* Adjust position */
+    }
+}

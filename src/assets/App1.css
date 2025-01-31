@@ -1,0 +1,486 @@
+
+#navbarMenu {
+    display: none;
+    /* Hide the menu by default */
+}
+
+#navbarMenu.show {
+    display: block;
+    /* Show the menu when 'show' class is applied */
+}
+
+@media (max-width: 768px) {
+    .overlay-dropdown {
+        display: none;
+        /* Hide the overlay dropdown on smaller screens */
+    }
+}
+
+/* HomePage design starts from here */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: opacity(0.6);
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.tourista-navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 100;
+    background-color: #ffcc00;
+    /* background-image: linear-gradient(to right, #76a7fc 0%, #005eff 100%); */
+    /* backdrop-filter: blur(20px); */
+}
+
+.tourista-navbar .brand {
+    margin: auto;
+    width: fit-content;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.tourista-navbar .brand h1 {
+    font-family: "Comforter", cursive;
+    margin-top: 5%;
+    color: #000000;
+    font-weight: 600;
+}
+
+.tourista-navbar ul {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-left: 0px;
+    display: flex;
+}
+
+.tourista-navbar ul li {
+    margin: auto;
+    margin-left: 0px;
+    list-style: none;
+    font-weight: 700;
+    font-size: large;
+    color: #000000;
+    
+}
+
+.rect {
+    margin: auto;
+    margin-left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+}
+
+.tourista-navbar ul li:hover .rect {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.tourista-navbar ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: smaller;
+    text-decoration: none;
+    color: #000000;
+}
+
+.tourista-navbar .navbar-toggler {
+    margin: auto;
+    width: 50px;
+    height: 40%;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 20px;
+}
+
+.tourista-navbar .navbar-toggler .line1,
+.tourista-navbar .navbar-toggler .line2 {
+    margin: auto;
+    width: 20px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.overlay-dropdown {
+    display: none;
+}
+
+.overlay-dropdown ul li {
+    display: none;
+}
+
+#intro-div,
+#about-div,
+#services-div,
+#careers-div,
+#contact-div,
+#blog-div,
+#login-div #register-div {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    filter: sepia(100%) hue-rotate(150deg) brightness(40%) saturate(300%);
+    margin-left: 3%;
+}
+
+#intro-div h2,
+#about-div h2,
+#services-div h2,
+#careers-div h2,
+#contact-div h2,
+#blog-div h2,
+#login-div h2,
+#register-div h2 {
+    margin: auto;
+    font-size: 7vw;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1em;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .tourista-navbar ul {
+        display: none;
+    }
+
+    .tourista-navbar .navbar-toggler {
+        display: flex;
+    }
+
+    .overlay-dropdown {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: none;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .overlay-dropdown .brand {
+        margin: auto;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 12px;
+    }
+
+    .overlay-dropdown .brand h1 {
+        font-family: "Comforter", cursive;
+        margin: auto;
+    }
+
+    .overlay-dropdown ul {
+        width: 50%;
+        height: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: -16px;
+        margin-top: 20px;
+    }
+
+    .overlay-dropdown ul li {
+        display: flex;
+        list-style-type: none;
+        margin-left: 20px;
+    }
+
+    .overlay-dropdown ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 50px;
+    }
+}
+
+/* search bar design starts here */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+
+/* search bar design starts here */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+
+/* Base styles for the search bar */
+.spectacledcoder-search-bar {
+    width: 50px;
+    height: 60px;
+    margin: auto;
+    background-color: #ffcc00;
+    display: flex;
+    border-radius: 0% 30px 30px 30px;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin-left: 78.5%;
+    margin-right: auto;
+    cursor: pointer;
+    transition: width 0.5s ease-in-out; /* Smooth transition for opening and closing */
+    align-items: center; /* Center the search icon */
+}
+
+/* Styles for the search icon */
+.search-icon {
+    padding: 5px;
+    margin: auto 10px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* When the search bar is expanded */
+.spectacledcoder-search-bar.expanded {
+    width: 300px; /* Increase width to accommodate the input field */
+    border-radius: 0% 30px 30px 30px;
+}
+
+/* The input field is hidden by default */
+.spectacledcoder-search-input {
+    margin: auto;
+    width: 0;
+    height: 70%;
+    opacity: 0;
+    outline: none;
+    border: none;
+    font-family: 'Belanosima', sans-serif;
+    border-radius: 25px;
+    padding-left: 10px;
+    transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for width and opacity */
+}
+
+/* Show the input field only when expanded */
+.spectacledcoder-search-bar.expanded .spectacledcoder-search-input {
+    width: 78%; /* Adjust width when expanded */
+    opacity: 1; /* Make input field visible */
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .spectacledcoder-search-bar.expanded {
+        width: 80%;
+        border-radius: 0% 30px 30px 15px;
+    }
+}
+
+/* search bar ends here */
+
+   
+  /*search bar ends here    
+
+
+  /* content slider goes here */ 
+
+/* content slider goes here */ 
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+.slider-container {
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.slide-title {
+    font-family: "Comforter", cursive;
+    font-weight: 900;
+    width: 100%;
+    max-width: 50rem;
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+
+}
+
+.slide-desc {
+    font-family: "Comforter", cursive;
+    width: 100%;
+    max-width: 50rem;
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.slide-btn {
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    transition: ease 0.3s;
+}
+
+.slide-btn:hover {
+    gap: 1rem;
+}
+
+.slide-number-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 5;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: rgba(211, 211, 211, 0.788);
+    letter-spacing: 0.2rem;
+}
+
+.slide-number-container hr {
+    width: 3rem;
+    transform: rotate(130deg);
+    border-color: rgba(211, 211, 211, 0.788);
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.slider-nav-btn {
+    cursor: pointer;
+    background-color: rgba(211, 211, 211, 0.226);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.3s;
+}
+
+.slider-nav-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.dot-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgba(211, 211, 211, 0.226);
+    border-radius: 50%;
+    display: inline-block;
+    transition: ease 0.3s;
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+.fade-in {
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+.fade-out {
+    opacity: 0;
+    animation: fadeOut 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+
