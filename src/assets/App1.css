@@ -288,12 +288,14 @@ body {
 }
 
 /* Mobile responsiveness */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
     .spectacledcoder-search-bar.expanded {
         width: 80%;
         border-radius: 0% 30px 30px 15px;
     }
 }
+
+
 
 /* search bar ends here */
 
