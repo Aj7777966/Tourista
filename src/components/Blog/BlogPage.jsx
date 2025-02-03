@@ -49,9 +49,9 @@ const Page = () => {
           <div className="slider1">
             <ul className="items">
               <li class="item current"><img src="https://dl.dropbox.com/scl/fi/fe47571tivrix8851efkh/beach-2084350_1920-1-1.jpg?rlkey=fnkz6s1jyu3hjh59702lrdh37&st=nh77zf9u&dl=0" /></li>
-              <li class="item"><img src="https://dl.dropbox.com/scl/fi/dtiseoiajb9ki9nhqggsw/kashmir.jpg?rlkey=f51xkgpjoxsho0hgcjkr8a3hs&st=qxpydhv1&dl=0" /></li>
-              <li class="item"><img src="https://dl.dropbox.com/scl/fi/mu860onjj025az2b3oewt/camping-3893587_1920-1-1.jpg?rlkey=qyh12h1c66sp4h014uk7axn2e&st=tgel3b0f&dl=0" /></li>
-              <li class="item"><img src="https://dl.dropbox.com/scl/fi/ompby6n9jot0dz3zkezjq/mountain-3800239_1920-1.jpg?rlkey=hm6d5gjstnqmorizew5k60mx0&st=q6qwt1ns&dl=0" /></li>
+              <li class="item"><img src="https://dl.dropbox.com/scl/fi/0cssaslypvcer4vx1fg96/kashmir.jpg?rlkey=fdlby6c4hazep5cvgpnmn6bu8&st=uog10mw6&dl=0"/></li>
+              <li class="item"><img src="https://dl.dropbox.com/scl/fi/y9h3ni1yfoq0lou7aro3j/camping-3893587_1920-1-1.jpg?rlkey=ahxmge1zsuf4hdlv7ave2w69i&st=ltt4ahzo&dl=0" /></li>
+              <li class="item"><img src="https://dl.dropbox.com/scl/fi/uma0vloke7j0t6p9rsrc1/mountain-3800239_1920-1.jpg?rlkey=buxe5ahm6j87xaam06w2wr7mk&st=nq27kavr&dl=0" /></li>
             </ul>
 
 
