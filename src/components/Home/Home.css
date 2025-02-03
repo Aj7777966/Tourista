@@ -99,6 +99,7 @@
     letter-spacing: 7px;
     position: absolute;
     opacity: 0;
+    top: 1;
 }
 
 
@@ -109,7 +110,7 @@
     font-size: 40px;
     position: absolute;
     margin: auto;
-    top: 14%;
+    top:28%;
     width: 100%;
 }
 
@@ -117,6 +118,7 @@
 @media (max-width: 1024px) {
     .slider {
         font-size: 40px;
+        top:10%;
         
     }
 }
@@ -124,7 +126,7 @@
 @media (max-width: 768px) {
     .slider {
         font-size: 30px;
-        top: 3;
+        top: 17%;
         
     }
 }
@@ -132,7 +134,7 @@
 @media (max-width: 480px) {
     .slider {
         font-size: 20px;
-        top: 0.5;
+        top: 15%;
         
     }
 }
@@ -140,8 +142,7 @@
 
 @media (max-width: 1024px) {
     .line {
-        font-size: 40px;
-        
+        font-size: 40px;       
     }
 }
 
@@ -154,8 +155,8 @@
 
 @media (max-width: 480px) {
     .line {
-        font-size: 20px;
-        top: 1;
+        font-size: 12px;
+        
         
     }
 }

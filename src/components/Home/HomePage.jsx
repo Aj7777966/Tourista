@@ -38,11 +38,11 @@ const Page = () => {
               rel="stylesheet"
             />
             <div className="line">FIND</div>
-            <br /><br />
+            <br/>
             <div className="line">EXPLORE</div>
-            <br /><br />
+            <br/>
             <div className="line">EXPERIENCE</div>
-            <br /><br />
+            <br/>
             <div className="line">
               TOURISTA WAY!
             </div>
