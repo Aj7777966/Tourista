@@ -33,7 +33,7 @@ const Page = () => {
             </li>
             <li class="cards_item">
               <div class="card">
-                <div class="card_image"><img src="https://dl.dropbox.com/scl/fi/3tn8pfsfe0vpz9dgk2wko/Hotel-Booking.jpg?rlkey=pqdc2634bwu01orevfkytuxof&st=7r2miybj&dl=0" /></div>
+                <div class="card_image"><img src="https://dl.dropbox.com/scl/fi/zx554u5qycfdx8uifetf8/Hotel-Booking.jpg?rlkey=ly0ehk0xnlb486x34r85luuqw&st=r1xkvz5x&dl=0" /></div>
                 <div class="card_content">
                   <h2 class="card_title">Accommodation Booking</h2>
                   <br />
