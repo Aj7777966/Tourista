@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../assets/App1.css'
 import Navbar from "../../Include/Navbar"
+import Footer from "../../Include/Footer";
 
 const Page = () => {
   return (
@@ -88,7 +89,8 @@ const Page = () => {
             </li>
           </ul>
         </div>
-        {/* <p class="disclaimer">Designed & Created by SpectacledCoder</p> */}
+        <br/><br/>
+        <Footer/>
 
 
 

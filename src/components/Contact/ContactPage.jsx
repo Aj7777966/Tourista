@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Contact/Contact.css'
 import Navbar from "../../Include/Navbar"
+import Footer from '../../Include/Footer';
 
 const Page = () => {
 
@@ -61,7 +62,8 @@ const Page = () => {
            <p className='contactqoute'>Have questions? Let’s connect and make your journey smooth!</p>
           <br /> <br /> <br /> <br />
         </div>
-
+        <br/><br/>
+        <Footer/>
 
 
       </header>

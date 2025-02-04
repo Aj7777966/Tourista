@@ -2,6 +2,7 @@ import "../Home/Home.css"
 import { useEffect } from "react";
 import Navbar from "../../Include/Navbar"
 import { homePageSlider, initializeSlider } from "./Home"
+import Footer from "../../Include/Footer";
 
 const Page = () => {
   
@@ -122,8 +123,8 @@ const Page = () => {
             </li>
           </ul>
         </div>
-
-
+        <br/><br/>
+        <Footer/>
       </header>
     </>
   );
