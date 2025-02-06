@@ -47,7 +47,8 @@ const Slider = () => {
           className={`slide ${index === currentIndex ? "active" : "fade"}`}
           style={{ display: index === currentIndex ? "block" : "none" }}
         >
-          <img className="slide-image" src={slide.image} alt="Slide" />
+          
+          <img className="slide-image skeleton" src={slide.image} alt="Slide" />
           <div className="slide-content">
             {slide.title && <h3 className="slide-title">{slide.title}</h3>}
             <p className="slide-desc">{slide.description}</p>

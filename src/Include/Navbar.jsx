@@ -1,11 +1,26 @@
 import React from "react";
 import "../assets/App1.css";
 import { useState } from "react";
+import data from "../Data";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 const Page = () => {
+  // const [searchTerm, setSearchTerm] = useState("");
+  // const [searchResults, setSearchResults] = useState(data);
 
-  
+  // useEffect(() => {
+  //   if (searchTerm) {
+  //     const results = data.filter((item) =>
+  //       item.city?.cityname?.toLowerCase().includes(searchTerm.toLowerCase())
+  //     );
+  //     setSearchResults(results);
+  //   } else {
+  //     setSearchResults(data);
+  //   }
+  // }, [searchTerm]);
+
 
   const [isExpanded, setIsExpanded] = useState(false);
   const [searchText, setSearchText] = useState(""); // Define the state for input text
@@ -28,7 +43,7 @@ const Page = () => {
             <a href="/about">About</a>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <a href="/destination">Destinations</a>
           </li>
           <li>
             <a href="/contact">Contact</a>
@@ -51,7 +66,7 @@ const Page = () => {
             <a href="#about-div">About</a>
           </li>
           <li>
-            <a href="#services-div">Services</a>
+            <a href="#services-div">Destinations</a>
           </li>
           <li>
             <a href="#contact-div">Contact</a>
@@ -79,7 +94,7 @@ const Page = () => {
             <div className="rect"></div>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <a href="/destination">Destinations</a>
             <div className="rect"></div>
           </li>
           <li>
@@ -98,6 +113,18 @@ const Page = () => {
 
           </li>
         </ul>
+
+        {/* <div className="destinations-box-searchbar-container">
+          <input
+            type="text"
+            className="searchbar-textbox"
+            placeholder="Search Here"
+            spellCheck="false"
+            value={searchTerm}
+            onChange={(event) => setSearchTerm(event.target.value)}
+          />
+        </div> */}
+
 
         <div
       className={`spectacledcoder-search-bar ${isExpanded ? "expanded" : ""}`}
@@ -121,22 +148,6 @@ const Page = () => {
         alt="search"
       />
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <div className="navbar-toggler" id="toggler">

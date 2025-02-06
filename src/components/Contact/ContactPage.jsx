@@ -45,10 +45,10 @@ const Page = () => {
     <>
 
       <header className="App-header">
-      <Navbar/>
+        <Navbar />
 
-        <div className="container">
-        <div className="slider1">
+        <div className="container-md">
+          <div className="slider1 skeleton">
             <ul className="items">
               <li className="item current"><img src="https://dl.dropbox.com/scl/fi/qfggqwanegr457q3r3csc/beach-2084350_1920-1-1.jpg?rlkey=eb5jsxsm4yx8y44zf7kobyj67&st=qy36r4lk&dl=0" /></li>
               <li className="item"><img src="https://dl.dropbox.com/scl/fi/0cssaslypvcer4vx1fg96/kashmir.jpg?rlkey=fdlby6c4hazep5cvgpnmn6bu8&st=uog10mw6&dl=0" /></li>
@@ -59,11 +59,11 @@ const Page = () => {
 
           </div>
           <h1 className='text-overlay-x'>CONTACT US</h1>
-           <p className='contactqoute'>Have questions? Let’s connect and make your journey smooth!</p>
+          <p className='contactqoute'>Have questions? Let’s connect and make your journey smooth!</p>
           <br /> <br /> <br /> <br />
         </div>
-        <br/><br/>
-        <Footer/>
+        <br /><br />
+        <Footer />
 
 
       </header>
