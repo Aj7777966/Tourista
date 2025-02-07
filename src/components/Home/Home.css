@@ -186,7 +186,7 @@
 @media (max-width: 480px) {
     .slider {
         font-size: 20px;
-        top: 15%;
+        top: 11%;
         
     }
 }
@@ -305,6 +305,11 @@ img {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+.card-image{
+    object-fit: contain;
+    height: auto;
+    width: auto;
+}
 
 .card:hover {
     transform: scale(1.05);
@@ -341,3 +346,51 @@ img {
 }
 
 /* card section ends here */
+
+/* top destinations css starts here */
+.home-city-container{
+    height: fit-content;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+  .destinations-text-box{
+    height: 20%;
+    width: 100%;
+    /* color: #004165; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 25px;
+    /* border: 1px solid red; */
+  }
+  .destinations-image-box{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* border: 1px solid red; */
+  }
+  .destinations-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .home-manycity{
+    color: #004165;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 40.4%;
+  }

@@ -281,7 +281,7 @@ const data = [
               "name": "Porbandar Bird Sanctuary",
               "about": "Porbandar Bird Sanctuary is the only bird sanctuary in Gujarat that provides legal protection to the birds which nest there. It is small, only covering one square km.",
               "address": "Chhaya Rd, Siddheshwar Park, Chhaya, Porbandar.",
-              "url": "https://www.dropbox.com/scl/fi/qjse5c6cow5kjq6nzuwgw/Porbandar-Bird-Sanctuary-porbandar.jpg?rlkey=6v8odjseil9n94z7ele17y13a&st=i74c1z8v&dl=0"
+              "url": "https://dl.dropbox.com/scl/fi/qjse5c6cow5kjq6nzuwgw/Porbandar-Bird-Sanctuary-porbandar.jpg?rlkey=6v8odjseil9n94z7ele17y13a&st=i74c1z8v&dl=0"
             },
             {
               "name": "Shree Hari Temple",
@@ -548,7 +548,7 @@ const data = [
               "name": "Lake Pichola",
               "address": "Lake Pichola, Udaipur, Rajasthan 313001",
               "about": "Lake Pichola is an artificial freshwater lake in Udaipur, surrounded by hills, palaces, temples, and ghats. Visitors can enjoy boat rides on the lake and witness stunning views of the city.",
-              "url": "https://www.lakepichola.com/wp-content/uploads/2022/05/Lake-Pichola.jpg"
+              "url": "https://dl.dropbox.com/scl/fi/go278yy5urwjvrbp66wsq/Lake-Pichola.jpg?rlkey=j62w424rf0sqhml7tp8j64nm0&st=97yalw38&dl=0"
             },
             {
               "name": "Jag Mandir",
@@ -1878,7 +1878,7 @@ const data = [
               "name": "Kashi Vishwanath Temple",
               "address": "Kashi Vishwanath Temple, Varanasi, Uttar Pradesh",
               "about": "Kashi Vishwanath Temple is one of the most sacred Hindu temples dedicated to Lord Shiva. It is located on the western bank of the Ganges River in Varanasi and is visited by millions of devotees annually.",
-              "url": "hhttps://dl.dropbox.com/scl/fi/q0hsygoroctqkiyffukgv/Kashi-Vishwanath-Temple-varanasi.png?rlkey=djz0t97c94yniq29yaiojhizq&st=f59269m1&dl=0"
+              "url": "https://dl.dropbox.com/scl/fi/q0hsygoroctqkiyffukgv/Kashi-Vishwanath-Temple-varanasi.png?rlkey=djz0t97c94yniq29yaiojhizq&st=f59269m1&dl=0"
             },
             {
               "name": "Dashashwamedh Ghat",
@@ -2948,7 +2948,7 @@ const data = [
               "name": "Kolia Bhomora Setu",
               "address": "NH715, Tezpur, Assam",
               "about": "Kolia Bhomora Setu, an existing bridge completed in 1987, is a 3.015 km long pre-stressed concrete road bridge on NH-715 over the Brahmaputra River in Tezpur Assam state of India, which connects Tezpur in Sonitpur district on northern bank with Kaliabor in Nagaon District on the south bank.",
-              "url": "https://dl.dropbox.com/scl/fi/2hcsifetqwvxzxn2qrhav/Kolia-Bhomora-Setu-kaziranga.jpg?rlkey=ie81fp7uozx6o148i2494b21t&st=rhebzfdm&dl=0"
+              "url": "https://dl.dropbox.com/scl/fi/ohyxtyafzpqig6eo57ctk/Kolia-Bhomora-Setu-kaziranga.jpg?rlkey=5kc7hubkdhv791u9azinkp3ls&st=smw0xz4e&dl=0"
             },
             {
               "name": "Kaziranga National Orchid and Biodiversity Park",

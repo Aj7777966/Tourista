@@ -33,7 +33,7 @@ const DestinationsPage = () => {
           <div className="destinations-box-searchbar-container">
             <input
               type="text"
-              className="searchbar-textbox"
+              className="searchbar-textbox" 
               placeholder="Search Here"
               spellCheck="false"
               value={searchTerm}
@@ -47,7 +47,7 @@ const DestinationsPage = () => {
                   <div className="destinations-text-box">
                     <label className="destinations-text">{element.city.cityname}</label>
                   </div>
-                  <div className="destinations-image-box">
+                  <div className="destinations-image-box skeleton">
                     {element.city.details.places[0]?.url ? (
                       <img src={element.city.details.places[0].url} className="destinations-image" alt={element.city.cityname} />
                     ) : (
