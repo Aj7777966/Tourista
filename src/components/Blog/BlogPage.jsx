@@ -47,7 +47,7 @@ const Page = () => {
         <Navbar />
         <br /><br />
         <div className="container-md">
-          <div className="slider1">
+          <div className="slider1 skeleton">
             <ul className="items">
               <li class="item current"><img src="https://dl.dropbox.com/scl/fi/pyoffmyxhtzcu7z8q2z2t/beach-2084350_1920-1-1.jpg?rlkey=2ssh61gldfjl8j9hwr3nejmit&st=brugpzwe&dl=0" /></li>
               <li class="item"><img src="https://dl.dropbox.com/scl/fi/6ac3tsb8a6l2gcsgfcn7i/mountain-3800239_1920-1.jpg?rlkey=9xz8w5kjxvpipxbl6uhsblido&st=2lep0yck&dl=0" /></li>

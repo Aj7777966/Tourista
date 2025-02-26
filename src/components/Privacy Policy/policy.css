@@ -32,12 +32,36 @@
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
   animation-duration: 1.4s;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .fade-in.delayed {
   animation-delay: 1.4s;
 }
+
+.fade-in.delayed1{
+  animation-delay: 2.5s;
+}
+.fade-in.delayed2{
+  animation-delay: 3.0s;
+}
+.fade-in.delayed3{
+  animation-delay: 3.5s;
+}
+.fade-in.delayed4{
+  animation-delay: 4.0s;
+}
+.fade-in.delayed5{
+  animation-delay: 4.5s;
+}
+.fade-in.delayed6{
+  animation-delay: 5.0s;
+}
+.fade-in.delayed7{
+  animation-delay: 5.5s;
+}
+
+
 
 .container1 {
   justify-content: center;

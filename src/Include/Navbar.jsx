@@ -7,21 +7,7 @@ import { Link } from "react-router-dom";
 
 
 const Page = () => {
-  // const [searchTerm, setSearchTerm] = useState("");
-  // const [searchResults, setSearchResults] = useState(data);
-
-  // useEffect(() => {
-  //   if (searchTerm) {
-  //     const results = data.filter((item) =>
-  //       item.city?.cityname?.toLowerCase().includes(searchTerm.toLowerCase())
-  //     );
-  //     setSearchResults(results);
-  //   } else {
-  //     setSearchResults(data);
-  //   }
-  // }, [searchTerm]);
-
-
+  
   const [isExpanded, setIsExpanded] = useState(false);
   const [searchText, setSearchText] = useState(""); // Define the state for input text
 
@@ -56,7 +42,7 @@ const Page = () => {
           </li>
         </ul>
         <div className="brand">
-          <h1>Tourista</h1>
+          <a href="/"><h1>Tourista</h1></a>
         </div>
         <ul>
           <li>
@@ -82,7 +68,7 @@ const Page = () => {
 
       <div className="tourista-navbar">
         <div className="brand">
-          <h1>TOURISTA</h1>
+        <h1>TOURISTA</h1>
         </div>
         <ul>
           <li>

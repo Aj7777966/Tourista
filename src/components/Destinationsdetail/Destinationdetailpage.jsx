@@ -11,7 +11,7 @@ export default function Destinationdetail() {
     item.city.cityname.toLowerCase().includes(destinationname.toLowerCase())
   );
 
-  // State for skeleton loading
+  // State for skeleton loading 
   const [loading, setLoading] = useState(true);
   const imgRef = useRef(null);
 
