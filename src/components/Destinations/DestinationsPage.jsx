@@ -12,7 +12,7 @@ const DestinationsPage = () => {
   useEffect(() => {
     if (searchTerm) {
       const results = data.filter((item) =>
-        item.city?.cityname?.toLowerCase().includes(searchTerm.toLowerCase())
+        item.city?.cityname?.toLowerCase().includes(searchTerm.toLowerCase()) 
       );
       setSearchResults(results);
     } else {
