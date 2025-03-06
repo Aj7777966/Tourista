@@ -69,3 +69,21 @@
         /* Adjust position */
     }
 }
+
+
+.contactcontainer{
+    display: flex;
+    gap: 25px;
+    margin-left: 24%;
+
+   
+}
+.emailheader{
+    font-size: 38px;
+    font-family: "comforter", cursive;
+}
+
+.emailus{
+    color: #ffcc00;
+    font-size: 25px;
+}

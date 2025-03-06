@@ -56,7 +56,7 @@ export default function Destinationdetail() {
             data && results[0].city.details.places.map((places) => {
               return <>
                 <div className="destinationdetailpage-places-container">
-                  <div className="destinationdetailpage-places-box">
+                  {/* <div className="destinationdetailpage-places-box"> */}
                     <div className="places-image-box skeleton">
                       <img src={places.url} className="places-image" alt="No Image Found" />
                     </div>
@@ -67,7 +67,7 @@ export default function Destinationdetail() {
                         <p className="places-detail">Address : {places.address}</p>
                       </div>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </div>
               </>
             })
@@ -79,7 +79,7 @@ export default function Destinationdetail() {
             data && results[0].city.details.food.map((food) => {
               return <>
                 <div className="destinationdetailpage-food-container">
-                  <div className="destinationdetailpage-food-box">
+                  {/* <div className="destinationdetailpage-food-box"> */}
                     <div className="food-image-box skeleton">
                       <img src={food.url} className="food-image" alt="No Image Found" />
                     </div>
@@ -90,7 +90,7 @@ export default function Destinationdetail() {
                         <p className="food-detail">Address : {food.address}</p>
                       </div>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </div>
               </>
             })
@@ -102,7 +102,7 @@ export default function Destinationdetail() {
             data && results[0].city.details.hotels.map((hotels) => {
               return <>
                 <div className="destinationdetailpage-hotel-container">
-                  <div className="destinationdetailpage-hotel-box">
+                  {/* <div className="destinationdetailpage-hotel-box"> */}
                     <div className="hotel-image-box">
                       <img src={hotels.url} className="hotel-image skeleton" alt="No Image Found" />
                     </div>
@@ -114,7 +114,7 @@ export default function Destinationdetail() {
                         <p className="hotel-detail">Ratings : {hotels.rating}</p>
                       </div>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </div>
                 <br /><br />
               </>

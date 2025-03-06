@@ -70,11 +70,16 @@ body {
     display: flex;
 }
 
+#gfg{
+    text-decoration: none;
+}
+
 .tourista-navbar .brand h1 {
     font-family: "Comforter", cursive;
     margin-top: 5%;
     color: #000000;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .tourista-navbar ul {

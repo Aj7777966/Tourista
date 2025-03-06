@@ -122,6 +122,78 @@
 
 }
 
+@media (max-width: 480px) {
+   .destinationdetailpage-places-box
+  {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .destinationdetailpage-food-box
+ {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+
+ }
+}
+
+@media (max-width: 480px) {
+  .destinationdetailpage-hotel-box
+ {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+
+ }
+}
+@media (max-width: 480px) {
+  .places-image-box
+ {
+     margin-left: 25%;
+     border-radius: none;
+     
+
+ }
+}
+
+@media (max-width: 480px) {
+  .places-image
+ {
+    
+     border-radius: none;
+     
+
+ }
+}
+
+@media (max-width: 480px) {
+  .food-image-box
+ {
+     margin-left: 25%;
+     border-radius: none;
+     
+
+ }
+}
+
+@media (max-width: 480px) {
+  .hotel-image-box
+ {
+     margin-left: 25%;
+     border-radius: none;
+     
+
+ }
+}
+
+
+
+
 .destinationdetailpage-places-box,
 .destinationdetailpage-food-box,
 .destinationdetailpage-hotel-box {
@@ -129,7 +201,7 @@
   width: 70%;
   border-radius: 30px;
   display: flex;
-  background: #fbfcfb;
+  background: #b1ffb1;
 }
 
 .places-image-box,
@@ -221,20 +293,4 @@
 
 }
 
-/* .skeleton-loader1 {
-  height: 100%;
-  width: 100%;
-  background-color: #e0e0e0;
-  animation: pulse 1.5s infinite ease-in-out;
-  position: absolute;
-  object-fit: contain;
-  margin-left: 5%;
-  margin-top: 1%;
-  border-radius: 10px;
-}
 
-@keyframes pulse {
-  0% { opacity: 0.6; }
-  50% { opacity: 1; }
-  100% { opacity: 0.6; }
-} */

@@ -10,6 +10,7 @@ import { faRightLong } from "@fortawesome/free-solid-svg-icons/faRightLong";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Page = () => {
+  
 
   const [topDestinations, setTopDestinations] = useState([]);
   const topdestinations = [

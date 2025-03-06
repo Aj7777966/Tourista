@@ -1,13 +1,10 @@
 import React from "react";
 import "../assets/App1.css";
 import { useState } from "react";
-import data from "../Data";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 
 const Page = () => {
-  
+
   const [isExpanded, setIsExpanded] = useState(false);
   const [searchText, setSearchText] = useState(""); // Define the state for input text
 
@@ -68,7 +65,7 @@ const Page = () => {
 
       <div className="tourista-navbar">
         <div className="brand">
-        <h1>TOURISTA</h1>
+         <a id="gfg" href="/"><h1>TOURISTA</h1></a> 
         </div>
         <ul>
           <li>
@@ -112,7 +109,7 @@ const Page = () => {
         </div> */}
 
 
-        <div
+        {/* <div
       className={`spectacledcoder-search-bar ${isExpanded ? "expanded" : ""}`}
       onClick={handleSearchToggle}
     >
@@ -133,8 +130,9 @@ const Page = () => {
         src="https://img.icons8.com/sf-black/500/000000/search.png"
         alt="search"
       />
-    </div>
+    </div> */}
 
+        
 
         <div className="navbar-toggler" id="toggler">
           <div className="line1" id="ln1"></div>
