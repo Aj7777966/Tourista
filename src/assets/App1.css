@@ -1,20 +1,183 @@
 
-#navbarMenu {
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+  } */
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffcc00;
+    display: flex;
+    justify-content: center; /* Center the nav-links */
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+  
+  /* Brand Name */
+  .navbar .brand a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    font-family: "comforter", cursive;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    
+    
+   
+  }
+  
+  /* Desktop Nav Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    position: absolute;
+    top: 14px;
+   
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    position: relative;
+    
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #333;
+  }
+  
+  /* Hover Effect (Underline Animation) */
+  .nav-links li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #000;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links li:hover::after {
+    width: 100%;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger {
     display: none;
-    /* Hide the menu by default */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1101;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Animation for 'X' effect */
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Mobile Nav */
+  @media (max-width: 1000px) {
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background: #ffcc00;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: right 0.4s ease-in-out;
+    }
+  
+    .nav-links.open {
+      right: 0;
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+  
+    /* Hamburger Icon Visibility */
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* Background Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+/* #navbarMenu {
+    display: none;
+    
 }
 
 #navbarMenu.show {
     display: block;
-    /* Show the menu when 'show' class is applied */
+    
 }
 
 @media (max-width: 768px) {
     .overlay-dropdown {
         display: none;
-        /* Hide the overlay dropdown on smaller screens */
+       
     }
-}
+} */
 
 /* HomePage design starts from here */
 html {
@@ -32,6 +195,8 @@ body {
 
 }
 
+
+
 .image-container {
     width: 100%;
     height: auto;
@@ -46,8 +211,7 @@ body {
     }
 }
 
-
-.tourista-navbar {
+ /* .tourista-navbar {
     position: fixed;
     width: 100%;
     height: 60px;
@@ -57,8 +221,7 @@ body {
     justify-content: space-evenly;
     z-index: 100;
     background-color: #ffcc00;
-    /* background-image: linear-gradient(to right, #76a7fc 0%, #005eff 100%); */
-    /* backdrop-filter: blur(20px); */
+    
 }
 
 .tourista-navbar .brand {
@@ -229,83 +392,10 @@ body {
         color: black;
         font-size: 50px;
     }
-}
-
-/* search bar design starts here */
-@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
-
-/* search bar design starts here */
-@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
-
-/* Base styles for the search bar */
-.spectacledcoder-search-bar {
-    width: 50px;
-    height: 60px;
-    margin: auto;
-    background-color: #ffcc00;
-    display: flex;
-    border-radius: 0% 30px 30px 30px;
-    position: fixed;
-    top: 0%;
-    left: 0;
-    right: 0;
-    margin-left: 78.5%;
-    margin-right: auto;
-    cursor: pointer;
-    transition: width 0.5s ease-in-out; /* Smooth transition for opening and closing */
-    align-items: center; /* Center the search icon */
-}
-
-/* Styles for the search icon */
-.search-icon {
-    padding: 5px;
-    margin: auto 10px;
-    border-radius: 50%;
-    background-color: #ffcc00;
-    cursor: pointer;
-    position: absolute;
-}
-
-/* When the search bar is expanded */
-.spectacledcoder-search-bar.expanded {
-    width: 300px; /* Increase width to accommodate the input field */
-    border-radius: 0% 30px 30px 30px;
-}
-
-/* The input field is hidden by default */
-.spectacledcoder-search-input {
-    margin: auto;
-    width: 0;
-    height: 70%;
-    opacity: 0;
-    outline: none;
-    border: none;
-    font-family: 'Belanosima', sans-serif;
-    border-radius: 25px;
-    padding-left: 10px;
-    transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for width and opacity */
-}
-
-/* Show the input field only when expanded */
-.spectacledcoder-search-bar.expanded .spectacledcoder-search-input {
-    width: 78%; /* Adjust width when expanded */
-    opacity: 1; /* Make input field visible */
-}
-
-/* Mobile responsiveness */
-@media only screen and (max-width: 1024px) {
-    .spectacledcoder-search-bar.expanded {
-        width: 80%;
-        border-radius: 0% 30px 30px 15px;
-    }
-}
+} 
+ */
 
 
-
-/* search bar ends here */
-
-   
-  /*search bar ends here    
 
 
   /* content slider goes here */ 

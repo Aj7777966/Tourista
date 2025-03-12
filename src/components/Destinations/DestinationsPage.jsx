@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../Include/Navbar";
 import Footer from "../../Include/Footer";
 import "../Destinations/Destinations.css";
+import Socialhover from "../../Include/socialhover";
 
 const DestinationsPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -23,6 +24,7 @@ const DestinationsPage = () => {
   return (
     <>
       <Navbar />
+      <Socialhover/>
       <br />
       <br />
       <div className="destinations-container">

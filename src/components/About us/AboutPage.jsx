@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import ImageSlider from "../../Include/ImageSlider";
 import Footer from "../../Include/Footer";
+import Socialhover from "../../Include/socialhover";
 
 const Page = () => {
 
@@ -15,6 +16,7 @@ const Page = () => {
       <header className="App-header">
         <Navbar />
         <ImageSlider />
+        <Socialhover/>
         <br /><br /><br /><br /><br />
 
         <div class="main">
@@ -105,7 +107,7 @@ const Page = () => {
                   <h5>Adityanath Jha</h5>
                   <p>Frontend Developer</p>
                 </div>
-                <ul className="social">
+                <ul className="social1">
                 <li><a href="#"><FontAwesomeIcon icon={faFacebook}/></a></li>
                   <li><a href="#"><FontAwesomeIcon icon={faInstagram}/></a></li>
                   <li><a href="#"><FontAwesomeIcon icon={faLinkedin}/></a></li>
@@ -121,7 +123,7 @@ const Page = () => {
                   <h5>Chirag Gohel</h5>
                   <p>Backend Developer</p>
                 </div>
-                <ul className="social">
+                <ul className="social1">
                 <li><a href="#"><FontAwesomeIcon icon={faFacebook}/></a></li>
                   <li><a href="#"><FontAwesomeIcon icon={faInstagram}/></a></li>
                   <li><a href="#"><FontAwesomeIcon icon={faLinkedin}/></a></li>

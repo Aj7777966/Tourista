@@ -18,8 +18,8 @@ const data = [
           },
           {
             "name": "Adalaj Stepwell",
-            "address": "Adalaj",
-            "about": "It was built in 1498 in the memory of Rana Veer Singh by his wife, Queen Rudadevi",
+            "address": "Adalaj Stepwell, Adalaj Rd, Adalaj, Gujarat 382421",
+            "about": "The Adalaj stepwell or 'Vav', as it is called in Gujarati, is intricately carved and is five stories deep. It was built in 1498.",
             "url": "https://dl.dropbox.com/scl/fi/00hq9ysycz0utbeg16gge/Adalaj_ki_Vav_Gujarat_240A1370_72.jpg?rlkey=z2gob18eezpjfzlifogu8qk3q&st=fo7uszb8&dl=0"
           },
           {
@@ -470,7 +470,7 @@ const data = [
           {
             "name": "Achalgarh Fort",
             "address": "Achalgarh, Mount Abu, Rajasthan 307501",
-            "about": "Achalgarh Fort is an ancient fort located in Mount Abu. It is known for its historical significance and houses several temples, including the Achaleshwar Mahadev Temple and Kantinath Jain Temple.",
+            "about": "Achalgarh Fort in Mount Abu is a historic marvel, home to the sacred Achaleshwar Mahadev and Kantinath Jain Temples.",
             "url": "https://dl.dropbox.com/scl/fi/gpc17r6qui7wsrxk1rsiu/Achalgarh-Fort-mount-abu.jpg?rlkey=kag9dln3btj713u92icbi5xtp&st=hqbtub6c&dl=0"
           }
         ],
@@ -1795,7 +1795,7 @@ const data = [
             "name": "Hanuman Garhi",
             "address": "Hanuman Garhi, Ayodhya, Uttar Pradesh",
             "about": "Hanuman Garhi is a temple dedicated to Lord Hanuman, located atop a hill in Ayodhya. It offers panoramic views of the city and is a popular pilgrimage site.",
-            "url": "https://www.dropbox.com/scl/fi/lvb4ypi8sqvik7b6lfca7/Hanuman-Garhi-ayodhya.jpg?rlkey=pzckci1xr0uljhtd4b3kl62sg&st=df2m57pu&dl=0"
+            "url": "https://dl.dropbox.com/scl/fi/lvb4ypi8sqvik7b6lfca7/Hanuman-Garhi-ayodhya.jpg?rlkey=pzckci1xr0uljhtd4b3kl62sg&st=df2m57pu&dl=0"
           },
           {
             "name": "Kanak Bhawan",
@@ -1861,7 +1861,7 @@ const data = [
           {
             "name": "Gargee Grand Ayodhya",
             "address": "Gargee Grand Ayodhya, Ayodhya, Uttar Pradesh",
-            "about": "Gargee Grand Ayodhya offers luxurious accommodation with modern amenities, situated in the heart of Ayodhya. It provides elegant rooms, a multi-cuisine restaurant, and a swimming pool.",
+            "about": "Gargee Grand Ayodhya offers luxurious accommodation with modern amenities, situated in the heart of Ayodhya. It provides elegant rooms and a multi-cuisine restaurant",
             "rating": "8.5/10",
             "url": "https://dl.dropbox.com/scl/fi/to85v369jkmzaaijksems/Gargee-Grand-Ayodhya-ayodhya.jpg?rlkey=304w84l9odt741w9z1bp5vmys&st=k9uiq3x6&dl=0"
           }

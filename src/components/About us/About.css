@@ -86,12 +86,12 @@
 .box:hover .box-desc {
 	color:#fff;
 }
-.box:hover .social li a {
+.box:hover .social1 li a {
 	background:#fff;
 	background-image: none;
 	color:#000;
 }
-.box:hover .social li a:hover {
+.box:hover .social1 li a:hover {
 	background:#1d1d1d;
 	color:#fff;
 }
@@ -113,14 +113,14 @@
 .box-desc {
 	position:relative;
 }
-ul.social {
+ul.social1 {
 	padding:0;
 }
-ul.social li {
+ul.social1 li {
 	display:inline-block;
 	list-style-type:none;
 }
-ul.social li a {
+ul.social1 li a {
 	position:relative;
 	width: 36px;
     height: 36px;

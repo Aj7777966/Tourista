@@ -8,9 +8,10 @@ import Footer from "../../Include/Footer";
 import data from "../../Data";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons/faRightLong";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Socialhover from "../../Include/socialhover";
 
 const Page = () => {
-  
+
 
   const [topDestinations, setTopDestinations] = useState([]);
   const topdestinations = [
@@ -69,9 +70,12 @@ const Page = () => {
           </div>
         </div>
 
+
+        
+        
         {/* Top destination sections starts here */}
 
-        <div class="main">
+        <div className="main">
           <h1 className="card-header">TOP DESTINATIONS</h1>
           <div className="home-city-container">
             {
@@ -96,6 +100,7 @@ const Page = () => {
 
         </div>
         <br /><br />
+        <Socialhover/>
         <Footer />
       </header>
     </>

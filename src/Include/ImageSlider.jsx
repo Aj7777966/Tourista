@@ -22,7 +22,7 @@ const Slider = () => {
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  };
+  };  
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>

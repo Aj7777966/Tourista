@@ -1,25 +1,43 @@
+@media (max-width: 480px) {
+    .App-header {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
 /* Slider design */
 .slider1 {
     position: relative;
     width: 100%;
 }
 
+@media (max-width: 480px) {
+    .slider1 {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+
+    }
+}
+
+
 /* skeleton image loader */
 .skeleton {
     background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
-    background-size: 200% 100%;
+    background-size: cover;  /* Adjusts to the element size */
     animation: shimmer 1.5s infinite linear;
     border-radius: 8px;
 }
 
 @keyframes shimmer {
     0% { 
-        background-position: -200% 0;
+        background-position: -100% 0;
      }
     100% {
-         background-position: 200% 0;
+         background-position: 100% 0;
          }
 }
+
 
 
 .items {
@@ -377,9 +395,24 @@ img {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
+
+
   .home-manycity{
     color: #004165;
     font-size: 25px;
     cursor: pointer;
     margin-left: 40.4%;
   }
+
+  @media (max-width: 480px) {
+
+    .home-manycity{
+        color: #004165;
+        font-size: 25px;
+        cursor: pointer;
+        margin-left: 20%;
+    }
+  }
+
+
+ 

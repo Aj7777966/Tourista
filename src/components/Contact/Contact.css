@@ -39,11 +39,11 @@
 
 @media screen and (max-width: 480px) {
     .text-overlay-x {
-        font-size: 20px;
+        font-size: 18px;
         /* Further reduce font size for mobile screens */
         letter-spacing: 0.3em;
         /* Adjust spacing */
-        top: 10%;
+        top: 14%;
         /* Adjust position */
     }
 }
@@ -65,7 +65,7 @@
         /* Further reduce font size for mobile screens */
         letter-spacing: 0.3em;
         /* Adjust spacing */
-        top: 20%;
+        top: 25%;
         /* Adjust position */
     }
 }

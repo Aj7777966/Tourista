@@ -1,11 +1,33 @@
 .destinationdetailpage-container,
 .aboutus-container {
   height: fit-content;
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: center;
-  
-  /* border: 1px solid red; */
+}
+
+.skeleton-loader {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  animation: pulse 1.5s infinite ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
 }
 
 .destinationdetailpage-box,
@@ -31,6 +53,16 @@
   /* border: 1px solid purple; */
 }
 
+@media (max-width: 480px) {
+
+  .destinationdetailpage-destination-name,
+  .aboutus-label-container {
+    color: #004165;
+    font-size: 50px;
+    font-weight: 500;
+  }
+}
+
 .destinationdetailpage-main-image-container {
   height: 400px;
   width: 100%;
@@ -41,13 +73,27 @@
   /* border: 1px solid orange; */
 }
 
+@media (max-width: 480px) {
+
+  .destinationdetailpage-main-image-container {
+    height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+}
+
+
+
 .destinationdetailpage-main-image-box {
   height: 100%;
   width: 70%;
   border-radius: 30px;
   overflow: hidden;
-  
-  
+
+
 }
 
 .destinationdetailpage-main-image-box img {
@@ -62,28 +108,15 @@
 .destinationdetailpage-main-image {
   height: 100%;
   width: 100%;
-  object-fit:contain;
+  object-fit: contain;
   border-radius: 30px;
 }
 
-.skeleton-loader {
-  width: 100%;   
-  height: 100%;  
-  background-color: #e0e0e0;
-  animation: pulse 1.5s infinite ease-in-out;
-  position: absolute; 
-  top: 0;
-  left: 0;
-}
 
-@keyframes pulse {
-  0% { opacity: 0.6; }
-  50% { opacity: 1; }
-  100% { opacity: 0.6; }
-}
 
 .destinationdetailpage-main-image-box {
-  position: relative; /* Keeps skeleton inside */
+  position: relative;
+  /* Keeps skeleton inside */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,120 +131,268 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 600;
   color: #004165;
-  /* border: 1px solid purple; */
+  margin-top: 5%;
+
+}
+@media (max-width: 480px) {
+
+  .destinationdetailpage-places-label-box,
+  .destinationdetailpage-food-label-box,
+  .destinationdetailpage-hotel-label-box {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 30px;
+
+
+  }
+}
+
+@media (max-width: 480px) {
+
+  .destinationdetailpage-places-container,
+  .destinationdetailpage-food-container,
+  .destinationdetailpage-hotel-container {
+    text-align: center;
+    margin-top: 12%;
+    font-size: 32px;
+
+
+  }
 }
 
 .destinationdetailpage-places-container,
 .destinationdetailpage-food-container,
 .destinationdetailpage-hotel-container {
 
-  height: fit-content;
+  height: 50%;
+  /* padding-top: 1%;
+  padding-bottom: 1%; */
   width: 100%;
-  padding-bottom: 2%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: left;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: 2px solid black;
 
 }
 
+.main-div {
+  display: flex;
+  height: 300px;
+  width: 70%;
+
+
+}
+
 @media (max-width: 480px) {
-   .destinationdetailpage-places-box
-  {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+  .main-div {
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    width: auto;
+    padding:auto;
+
+
+
+
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .destinationdetailpage-places-container {
+    display: block;
+    flex-direction: column;
+
+
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .destinationdetailpage-food-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
   }
 }
 
 @media (max-width: 480px) {
-  .destinationdetailpage-food-box
- {
-     display: flex;
-     flex-direction: column;
-     text-align: center;
+  .destinationdetailpage-hotel-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
- }
+  }
 }
 
 @media (max-width: 480px) {
-  .destinationdetailpage-hotel-box
- {
-     display: flex;
-     flex-direction: column;
-     text-align: center;
 
- }
-}
-@media (max-width: 480px) {
-  .places-image-box
- {
-     margin-left: 25%;
-     border-radius: none;
-     
+  .places-image-box,
+  .food-image-box,
+  .hotel-image-box {
+  
+    margin-left: 25%;
+    border-radius: none;
+    height: 100%;
+    width: 50%;
 
- }
+
+  }
 }
 
-@media (max-width: 480px) {
-  .places-image
- {
-    
-     border-radius: none;
-     
-
- }
+.places-image,
+.food-image,
+.hotel-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 @media (max-width: 480px) {
-  .food-image-box
- {
-     margin-left: 25%;
-     border-radius: none;
-     
 
- }
-}
+  .places-image,
+  .food-image,
+  .hotel-image {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 
-@media (max-width: 480px) {
-  .hotel-image-box
- {
-     margin-left: 25%;
-     border-radius: none;
-     
 
- }
+  }
 }
 
 
-
-
-.destinationdetailpage-places-box,
-.destinationdetailpage-food-box,
-.destinationdetailpage-hotel-box {
+.destinationdetailpage-places-box {
   height: 300px;
-  width: 70%;
+  width: 80%;
   border-radius: 30px;
   display: flex;
-  background: #b1ffb1;
+  background: #ffffff;
+
 }
 
+
+@media (max-width: 480px) {
+
+  .destinationdetailpage-places-box {
+
+    height: 200px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
 .places-image-box,
-.food-image-box,
-.hotel-image-box {
-  height: 108%;
+.food-image-box .hotel-image-box {
+  height: 100%;
   width: 50%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   overflow: hidden;
 
 }
+
+
+
+
+@media (max-width: 480px) {
+
+  .places-image-box,
+  .food-image-box,
+  .hotel-image-box {
+    height: 27%;
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 14%;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+
+
+  }
+}
+
+.places-detail,
+.food-detail,
+.hotel-detail {
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: justify;
+}
+
+
+
+@media (max-width: 480px) {
+
+  .places-detail,
+  .food-detail,
+  .hotel-detail {
+    
+    font-size: 12px;
+    width: 100%;
+    margin: auto;
+    padding: 12px;
+
+
+
+
+  }
+}
+
+.places-detail-title,
+.food-detail-title,
+.hotel-detail-title {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  font-family: "Comforter", cursive;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+
+}
+
+@media (max-width: 480px) {
+
+  .places-detail-title,
+  .food-detail-title,
+  .hotel-detail-title {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20%;
+    font-weight: 800;
+    
+    
+  }
+}
+
+
 
 .places-image-box img,
 .food-image-box img,
@@ -233,64 +414,63 @@
   width: 70%;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid purple; */
+
 }
+
+@media (max-width: 480px) {
+  .places-detail-box, .food-detail-box, .hotel-detail-box {
+    max-width: 200%;  /* Limit width for proper centering */
+    width: 100%;
+    margin: 0 auto;  /* Centers the box */
+    text-align: center; /* Centers the text inside */
+    
+  }
+
+  .places-detail-title, .food-detail-title, .hotel-detail-title {
+    order: -1;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 0;
+    width: 100%; /* Adjust margin for spacing */
+  }
+
+  .places-detail, .food-detail, .hotel-detail {
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    text-align: justify; 
+    margin: 10px 5px 5px 0;/* Ensure text stays centered */
+  }
+}
+
+
+/* @media (max-width: 480px) {
+
+  .places-detail-box,
+  .food-detail-box,
+  .hotel-detail-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  
+  }
+} */
+
+
 
 .places-image,
 .food-image,
 .hotel-image {
   height: 100%;
-  width: 150%;
+  width: 100%;
   object-fit: cover;
-
-
 }
 
-.places-detail-title,
-.food-detail-title,
-.hotel-detail-title {
-  height: 20%;
-  width: 150%;
-  margin-left: 5%;
-  display: flex;
-  font-size: 30px;
-  font-weight: 500;
-  margin-top: 10px;
+@media (max-width: 480px) {
 
-
+  .places-image,
+  .food-image,
+  .hotel-image {
+    height: 100%;
+  }
 }
-
-.places-detail-p-box,
-.food-detail-p-box {
-  height: 80%;
-  width: 150%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 20px;
-  font-weight: 400;
-  gap: 20px;
-
-}
-
-.hotels-detail-p-box {
-  height: 80%;
-  width: 150%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 20px;
-  font-weight: 400;
-  gap: 10px;
-
-}
-
-.places-detail,
-.food-detail,
-.hotel-detail {
-  margin-left: 60px;
-  margin-right: 20px;
-
-}
-
-
