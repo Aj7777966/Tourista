@@ -13,7 +13,7 @@ const DestinationsPage = () => {
   useEffect(() => {
     if (searchTerm) {
       const results = data.filter((item) =>
-        item.city?.cityname?.toLowerCase().includes(searchTerm.toLowerCase()) 
+        item.city?.cityname?.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setSearchResults(results);
     } else {
@@ -24,7 +24,7 @@ const DestinationsPage = () => {
   return (
     <>
       <Navbar />
-      <Socialhover/>
+      <Socialhover />
       <br />
       <br />
       <div className="destinations-container">
@@ -35,7 +35,7 @@ const DestinationsPage = () => {
           <div className="destinations-box-searchbar-container">
             <input
               type="text"
-              className="searchbar-textbox" 
+              className="searchbar-textbox"
               placeholder="Search Here"
               spellCheck="false"
               value={searchTerm}

@@ -19,9 +19,8 @@ const App = () => {
   return (
    <>
    <Routes>
-
     <Route path='/map' element={<Map/>}></Route>
-    <Route path='/' element={<HomePage/>}></Route>
+    <Route path='/home' element={<HomePage/>}></Route>
     <Route path='/blog' element={<BlogPage/>}></Route>
     <Route path='/mapmain' element={<Mapmain/>}></Route>
     <Route path='/about' element={<AboutPage/>}></Route>

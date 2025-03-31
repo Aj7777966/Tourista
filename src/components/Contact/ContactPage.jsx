@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Contact/Contact.css'
 import Navbar from "../../Include/Navbar"
+import "tailwindcss";
 import Footer from '../../Include/Footer';
 
 const Page = () => {
@@ -63,19 +64,21 @@ const Page = () => {
           <br /> <br /> <br /> <br />
         </div>
 
+        {/* npm install -D tailwindcss postcss autoprefixer */}
+        {/* npx tailwindcss init -p */}
         
 
-        <section class="text-gray-600 body-font bg-yellow-100">
+        <section class="text-gray-600 body-font">
           <div class="container flex flex-col md:flex-row lg:max-w-5xl w-full px-5 py-12 md:py-24 mx-auto section"
             id="contact-form">
             <div class="md:w-1/3 w-full">
-             
-              <p class="leading-relaxed text-xl text-gray-900">
+
+              <p class="leading-relaxed text-3xl text-gray-900">  
                 We're here to assist you! If you have any questions or need assistance, please feel free to reach out to
                 us.
                 <br /><br />
-                You can also email us at 
-                  <a href="https://veilmail.io/e/FkKh7o" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">  touristaofficial@gmail.com</a>
+                You can also email us at
+                <a href="https://veilmail.io/e/FkKh7o" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">  touristaofficial@gmail.com</a>
 
               </p>
               Or you contact us on our helpine number as below for other inquires or technical aspects or improvements : <br />
