@@ -1,6 +1,6 @@
 const data = [
   {
-    "city": {
+    
       "cityname": "Ahmedabad",
       "details": {
         "places": [
@@ -86,10 +86,9 @@ const data = [
           }
         ]
       }
-    }
   },
   {
-    "city": {
+    
       "cityname": "Vadodara",
       "details": {
         "places": [
@@ -175,10 +174,9 @@ const data = [
           }
         ]
       }
-    }
   },
   {
-    "city": {
+    
       "cityname": "Dwarka",
       "details": {
         "places": [
@@ -264,10 +262,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Porbandar",
       "details": {
         "places": [
@@ -353,10 +350,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Narmada",
       "details": {
         "places": [
@@ -442,10 +438,9 @@ const data = [
           }
         ]
       }
-    }
   },
   {
-    "city": {
+    
       "cityname": "Mount Abu",
       "details": {
         "places": [
@@ -531,10 +526,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Udaipur",
       "details": {
         "places": [
@@ -620,10 +614,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Jaisalmer",
       "details": {
         "places": [
@@ -709,10 +702,9 @@ const data = [
           }
         ]
       }
-    }
   },
   {
-    "city": {
+    
       "cityname": "chittorgarh",
       "details": {
         "places": [
@@ -798,10 +790,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Jaipur",
       "details": {
         "places": [
@@ -887,11 +878,10 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
 
-    "city": {
+    
       "cityname": "Delhi",
       "details": {
         "places": [
@@ -977,10 +967,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Leh Ladakh",
       "details": {
         "places": [
@@ -1066,10 +1055,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Shimla",
       "details": {
         "places": [
@@ -1155,10 +1143,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Manali",
       "details": {
         "places": [
@@ -1244,10 +1231,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Dharamshala",
       "details": {
         "places": [
@@ -1333,10 +1319,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Mussoorie",
       "details": {
         "places": [
@@ -1422,10 +1407,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Dehradun",
       "details": {
         "places": [
@@ -1511,10 +1495,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Nainital",
       "details": {
         "places": [
@@ -1600,10 +1583,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Haridwar",
       "details": {
         "places": [
@@ -1689,10 +1671,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Rishikesh",
       "details": {
         "places": [
@@ -1778,10 +1759,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Ayodhya",
       "details": {
         "places": [
@@ -1867,10 +1847,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Varanasi",
       "details": {
         "places": [
@@ -1956,10 +1935,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Prayagraj",
       "details": {
         "places": [
@@ -2045,10 +2023,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Lucknow",
       "details": {
         "places": [
@@ -2134,10 +2111,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Mathura",
       "details": {
         "places": [
@@ -2223,10 +2199,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Patna",
       "details": {
         "places": [
@@ -2312,10 +2287,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Gaya",
       "details": {
         "places": [
@@ -2401,10 +2375,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Nalanda",
       "details": {
         "places": [
@@ -2490,10 +2463,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Gangtok",
       "details": {
         "places": [
@@ -2579,11 +2551,9 @@ const data = [
           }
         ]
       }
-    }
-  },
-
+    },
   {
-    "city": {
+    
       "cityname": "Pelling",
       "details": {
         "places": [
@@ -2669,11 +2639,9 @@ const data = [
           }
         ]
       }
-    }
-  },
-
+    },
   {
-    "city": {
+    
       "cityname": "Guwahati",
       "details": {
         "places": [
@@ -2759,10 +2727,9 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Diu",
       "details": {
         "places": [
@@ -2848,10 +2815,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Silchar",
       "details": {
         "places": [
@@ -2937,10 +2903,9 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Kaziranga",
       "details": {
         "places": [
@@ -3027,10 +2992,9 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Kolkata",
       "details": {
         "places": [
@@ -3116,10 +3080,9 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Darjeeling ",
       "details": {
         "places": [
@@ -3206,10 +3169,9 @@ const data = [
         ]
 
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Sundarvan",
       "details": {
         "places": [
@@ -3270,11 +3232,9 @@ const data = [
           }
         ]
       }
-    }
-  },
-
+    },
   {
-    "city": {
+    
       "cityname": "Siliguri ",
       "details": {
         "places": [
@@ -3360,11 +3320,10 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
 
   {
-    "city": {
+    
       "cityname": "Ranchi ",
       "details": {
         "places": [
@@ -3450,12 +3409,9 @@ const data = [
           },
         ]
       }
-    }
-  },
-
-  // Images to be left to save from here//
+    },
   {
-    "city": {
+    
       "cityname": "Jamshedpur ",
       "details": {
         "places": [
@@ -3541,10 +3497,9 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Cuttack ",
       "details": {
         "places": [
@@ -3630,10 +3585,9 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Bhubneshwar ",
       "details": {
         "places": [
@@ -3720,10 +3674,9 @@ const data = [
         ]
 
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Bhopal",
       "details": {
         "places": [
@@ -3810,10 +3763,9 @@ const data = [
         ]
 
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Indore",
       "details": {
         "places": [
@@ -3899,10 +3851,9 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Ujjain",
       "details": {
         "places": [
@@ -3988,11 +3939,10 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
 
   {
-    "city": {
+    
       "cityname": "Khajurao",
       "details": {
         "places": [
@@ -4078,11 +4028,10 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
 
   {
-    "city": {
+    
       "cityname": "Gwalior",
       "details": {
         "places": [
@@ -4168,11 +4117,10 @@ const data = [
           },
         ]
       }
-    }
-  },
+    },
 
   {
-    "city": {
+    
       "cityname": "Mahabaleshwar",
       "details": {
         "places": [
@@ -4258,10 +4206,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Pune",
       "details": {
         "places": [
@@ -4347,10 +4294,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Alibaug",
       "details": {
         "places": [
@@ -4436,10 +4382,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Lavasa",
       "details": {
         "places": [
@@ -4525,10 +4470,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Matheran",
       "details": {
         "places": [
@@ -4614,10 +4558,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Shirdi",
       "details": {
         "places": [
@@ -4703,10 +4646,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Nagpur",
       "details": {
         "places": [
@@ -4792,10 +4734,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Hyderabad",
       "details": {
         "places": [
@@ -4881,12 +4822,10 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
 
-  // chirag started the work from here//
   {
-    "city": {
+    
       "cityname": "Bangalore",
       "details": {
         "places": [
@@ -4965,10 +4904,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Hampi",
       "details": {
         "places": [
@@ -5054,10 +4992,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Goa",
       "details": {
         "places": [
@@ -5143,10 +5080,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Vijaywada",
       "details": {
         "places": [
@@ -5232,10 +5168,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Vizag",
       "details": {
         "places": [
@@ -5321,10 +5256,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Thiruvananthapuram",
       "details": {
         "places": [
@@ -5410,10 +5344,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Coimbatore",
       "details": {
         "places": [
@@ -5499,10 +5432,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Kochi",
       "details": {
         "places": [
@@ -5588,10 +5520,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Munnar",
       "details": {
         "places": [
@@ -5677,10 +5608,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Thekkady",
       "details": {
         "places": [
@@ -5766,10 +5696,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Chennai",
       "details": {
         "places": [
@@ -5855,10 +5784,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Puducherry",
       "details": {
         "places": [
@@ -5944,10 +5872,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Rameshwaram",
       "details": {
         "places": [
@@ -6033,10 +5960,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Kanyakumari",
       "details": {
         "places": [
@@ -6122,10 +6048,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Ooty",
       "details": {
         "places": [
@@ -6211,10 +6136,9 @@ const data = [
           }
         ]
       }
-    }
-  },
+    },
   {
-    "city": {
+    
       "cityname": "Andaman",
       "details": {
         "places": [
@@ -6301,7 +6225,6 @@ const data = [
         ]
       }
     }
-  }
 ];
 export default data;
 

@@ -29,7 +29,7 @@ const RegisterPage = () => {
       return;
     }
 
-    
+
     let response = await fetch("http://localhost:3000/register", {
       method: "POST",
       headers: {

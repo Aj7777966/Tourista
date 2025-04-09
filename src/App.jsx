@@ -8,11 +8,13 @@ import LoginPage from "./components/Login/LoginPage"
 import AboutPage from "./components/About us/AboutPage"
 import ContactPage from "./components/Contact/ContactPage"
 import RegisterPage from "./components/Register/RegisterPage"
+import TourDetailsPage from './components/Tour detail/Tourdetail'
 import DestinationsPage from "./components/Destinations/DestinationsPage"
 import Privacypolicypage from './components/Privacy Policy/Privacypolicypage'
 import Destinationdetail from './components/Destinationsdetail/Destinationdetailpage'
 import Termsconditionspage from "./components/Terms and conditions/Termsconditionspage"
 import Destinationdetailmain from './components/Destinationdetailmain/desitnationdetailmain'
+import PricingCard from './Include/PricingCard'
 
 
 const App = () => {
@@ -29,9 +31,11 @@ const App = () => {
     <Route path='/register' element={<RegisterPage/>}></Route>
     <Route path='/policy' element={<Privacypolicypage/>}></Route>
     <Route path='/terms' element={<Termsconditionspage/>}></Route>
+    <Route path="/tours/:id" element={<TourDetailsPage />}></Route>
     <Route path='/destination' element={<DestinationsPage/>}></Route>
     <Route path='/destinationdetailmain' element={<Destinationdetailmain/>}></Route>
     <Route path='/destinations/:destinationname' element={<Destinationdetail/>}></Route>
+
    </Routes>
 
 

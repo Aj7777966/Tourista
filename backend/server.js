@@ -3,18 +3,102 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
+import dotenv from "dotenv";
 
 
 const app = express();
 const port = 3000;
 
 app.use(cors());
+app.use(express.json())
 app.use(bodyParser.json());
+
+app.use(express.json({ limit: "1000mb" }));  // Increase JSON body size
+app.use(express.urlencoded({ extended: true, limit: "1000mb" }));
 
 // **Connect to MongoDB**
 mongoose.connect("mongodb://localhost:27017/Tourista", {
 }).then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("MongoDB Connection Error:", err));
+
+
+// **Schema for Destinations is diaplyed here**
+const destinationSchema = new mongoose.Schema({
+  cityname: { type: String, required: true, unique: true },
+  details: {
+    places: [{ name: String, address: String, about: String, url: String }],
+    food: [{ name: String, address: String, populardishes: String, url: String }],
+    hotels: [{ name: String, address: String, about: String, rating: Number, url: String, }]
+  }
+});
+
+const Destination = mongoose.model('Destination', destinationSchema);
+
+// **✅ POST Route to Add a New Destination**
+app.post('/api/destinations', async (req, res) => {
+  try {
+    const { cityname, details } = req.body;
+
+    // Validate request body
+    if (!cityname || !details) {
+      return res.status(400).json({ error: "Missing required fields" });
+    }
+
+    // Check if city already exists
+    const existingCity = await Destination.findOne({ cityname });
+    if (existingCity) {
+      return res.status(400).json({ error: "Destination already exists" });
+    }
+
+    // Insert new destination
+    const newDestination = new Destination({ cityname, details });
+    await newDestination.save();
+
+    res.status(201).json({ message: "Destination added successfully" });
+  } catch (error) {
+    res.status(500).json({ error: "Server error", details: error.message });
+  }
+});
+
+// **✅ GET Route to Fetch All Destinations**
+app.get('/api/destinations', async (req, res) => {
+  try {
+    const destinations = await Destination.find();
+    res.json(destinations);
+  } catch (error) {
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// **✅ GET Route to Fetch a Specific Destination**
+app.get('/api/destinations/:cityname', async (req, res) => {
+  try {
+    const city = req.params.cityname;
+    const destination = await Destination.findOne({ cityname: city });
+    if (!destination) return res.status(404).json({ error: "Destination not found" });
+    res.json(destination);
+  } catch (error) {
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+
+// ✅ Get all destinations or filter by cityname
+app.get('/api/destinations', async (req, res) => {
+  try {
+    const searchQuery = req.query.search;
+    let query = {};
+
+    if (searchQuery) {
+      query.cityname = { $regex: searchQuery, $options: "i" }; // Case-insensitive search
+    }
+
+    const destinations = await Destination.find(query);
+    res.json(destinations);
+  } catch (error) {
+    res.status(500).json({ error: "Server error", details: error.message });
+  }
+});
 
 
 // **Schema for User**

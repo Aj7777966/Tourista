@@ -61,7 +61,8 @@ const Page = () => {
         <h1 className='text-overlay-blog'>BLOG PAGE</h1>
         <p className='blogqoute'>Get updates along with regular news and articles related to travel and tourism </p>
 
-        <br/><br/>
+        
+        <div className='text-center font-bold text-5xl text-yellow-400 font-sans mb-9 mt-9 uppercase'>We Are coming soon stay updated !</div>
         <Footer/>
 
 

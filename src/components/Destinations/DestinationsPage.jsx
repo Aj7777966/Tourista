@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import data from "../../Data";
 import { Link } from "react-router-dom";
 import Navbar from "../../Include/Navbar";
 import Footer from "../../Include/Footer";
@@ -8,18 +7,52 @@ import Socialhover from "../../Include/socialhover";
 
 const DestinationsPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState(data);
+  const [destinations, setDestinations] = useState([]);
+  const [loading, setLoading] = useState(true);
 
+
+  
+  // Fetch data from MongoDB
   useEffect(() => {
-    if (searchTerm) {
-      const results = data.filter((item) =>
-        item.city?.cityname?.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setSearchResults(results);
-    } else {
-      setSearchResults(data);
-    }
-  }, [searchTerm]);
+    const fetchDestinations = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/destinations");
+        const data = await response.json();
+        setDestinations(data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching destinations:", error);
+      }
+    };
+    fetchDestinations();
+  }, []);
+
+
+
+
+
+  // Fetch data from MongoDB dynamically based on search
+  useEffect(() => {
+    const fetchDestinations = async () => {
+      try {
+        const response = await fetch(`http://localhost:3000/api/destinations?search=${searchTerm}`);
+        const data = await response.json();
+        setDestinations(data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching destinations:", error);
+      }
+    };
+    fetchDestinations();
+  }, [searchTerm]); // Re-run API call when searchTerm changes
+
+
+
+
+  // Filter destinations based on search
+  const filteredDestinations = destinations.filter((item) =>
+    item.cityname.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <>
@@ -29,9 +62,9 @@ const DestinationsPage = () => {
       <br />
       <div className="destinations-container">
         <div className="destinations-box">
-          <div className="destinations-box-paragraph">
-            <p className="destination-top-text">Search for your dream destination from 70+ destinations across India</p>
-          </div>
+          <p className="destinations-box-paragraph">
+            Search for your dream destination from 70+ destinations across India
+          </p>
           <div className="destinations-box-searchbar-container">
             <input
               type="text"
@@ -39,29 +72,30 @@ const DestinationsPage = () => {
               placeholder="Search Here"
               spellCheck="false"
               value={searchTerm}
-              onChange={(event) => setSearchTerm(event.target.value)}
+              onChange={(event) => setSearchTerm(event.target.value)} 
             />
           </div>
-          <div className="destinations-details-container">
-            {searchResults.length > 0 ? (
-              searchResults.map((element, index) => (
-                <Link key={index} to={`/destinations/${element.city.cityname}`} className="destinations">
+
+          { filteredDestinations.length > 0 ? (
+            <div className="destinations-details-container">
+              {filteredDestinations.map((element, index) => (
+                <Link key={index} to={`/destinations/${element.cityname}`} className="destinations">
                   <div className="destinations-text-box">
-                    <label className="destinations-text">{element.city.cityname}</label>
+                    <label className="destinations-text">{element.cityname}</label>
                   </div>
                   <div className="destinations-image-box skeleton">
-                    {element.city.details.places[0]?.url ? (
-                      <img src={element.city.details.places[0].url} className="destinations-image" alt={element.city.cityname} />
+                    {element.details.places[0]?.url ? (
+                      <img src={element.details.places[0].url} className="destinations-image" alt={element.cityname} />
                     ) : (
                       <p>No Image Available</p>
                     )}
                   </div>
                 </Link>
-              ))
-            ) : (
-              <h2>No destinations found</h2>
-            )}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <h2>No destinations found</h2>
+          )}
         </div>
       </div>
       <br />
@@ -71,3 +105,7 @@ const DestinationsPage = () => {
 };
 
 export default DestinationsPage;
+
+
+
+
